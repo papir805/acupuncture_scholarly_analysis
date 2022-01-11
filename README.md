@@ -3,6 +3,9 @@
 
 Important libraries used: `Pandas`, `NumPy`, `SciPy`, `Statsmodels`, and `Matplotlib`
 
+## How to use:
+Open up the .ipynb Jupyter notebook file to see the Python code, along with the outputs of that code, as well as any relevant mathematical formulas, rendered in LaTeX, that were used during the process.
+
 ## What does this contain?
 - Hypothesis testing for:
   - Difference in population proportions

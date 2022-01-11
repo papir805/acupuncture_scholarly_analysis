@@ -4,7 +4,9 @@
 Important libraries used: `Pandas`, `NumPy`, `SciPy`, `Statsmodels`, and `Matplotlib`
 
 ## How to use:
-Open up the .ipynb Jupyter notebook file to see the Python code, along with the outputs of that code, as well as any relevant mathematical formulas, rendered in LaTeX, that were used during the process.
+[Click here](https://github.com/papir805/acupuncture_scholarly_analysis/blob/master/scholarly_analysis_github.ipynb) to see the .ipynb Jupyter notebook file that contains the Python code, along with the outputs of that code, as well as any relevant mathematical formulas, rendered in LaTeX, that were used during the process.  
+
+[Backup: Click here](https://nbviewer.org/github/papir805/acupuncture_scholarly_analysis/blob/master/scholarly_analysis_github.ipynb) if the first link isn't able to render the notebook properly.
 
 ## What does this contain?
 - Hypothesis testing for:

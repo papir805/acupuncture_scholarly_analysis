@@ -15,7 +15,7 @@ jupyter:
 
 # Statistical analysis of published research paper: 
 
-Full scholarly article found on github here: [Effects of acupuncture with needle manipulation at different frequencies for patients with hypertension: Result of a 24- week clinical observation](https://github.com/papir805/acupucture_scholarly_analysis/blob/main/acupuncture_scholarly_article.pdf)
+Full scholarly article found on github here: [Effects of acupuncture with needle manipulation at different frequencies for patients with hypertension: Result of a 24- week clinical observation](https://github.com/papir805/acupuncture_scholarly_analysis/blob/master/acupuncture_scholarly_article.pdf)
 
 “Abstract
 

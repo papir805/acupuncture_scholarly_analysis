@@ -4,7 +4,9 @@
 Important libraries used: `Pandas`, `NumPy`, `SciPy`, `Statsmodels`, and `Matplotlib`
 
 ## How to use:
-[Here](https://github.com/papir805/acupuncture_scholarly_analysis/blob/master/acupuncture_scholarly_article.pdf) is the original article that describes the various acupuncture treatments, the treatment groups, and how the experiment was performed.
+[Here](https://github.com/papir805/acupuncture_scholarly_analysis/blob/master/acupuncture_scholarly_article.pdf) is the original article that describes the various acupuncture treatments, the treatment groups, and how the experiment was performed.  
+
+The data can be viewed [here](https://github.com/papir805/acupuncture_scholarly_analysis/blob/master/data/Acupuncture%20Data.csv).
 
 [Click here](https://github.com/papir805/acupuncture_scholarly_analysis/blob/master/scholarly_analysis_github.ipynb) to see the .ipynb Jupyter notebook file that contains the Python code, along with the outputs of that code, as well as any relevant mathematical formulas, rendered in LaTeX, that were used during the process.  
 

@@ -6,7 +6,7 @@ jupyter:
       extension: .Rmd
       format_name: rmarkdown
       format_version: '1.2'
-      jupytext_version: 1.13.5
+      jupytext_version: 1.13.8
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -43,7 +43,7 @@ from IPython.display import Markdown as md
 ```
 
 ```{python}
-orig_df = pd.read_excel("./Acupuncture Data.xlsx")
+orig_df = pd.read_csv("./data/Acupuncture Data.csv")
 ```
 
 ```{python}
@@ -138,7 +138,9 @@ Fail to reject $H_0$ because the calculated test statistic is not in the rejecti
 
 #### Conclusion - Using plain English
 
-It would appear that the proportion of those with high systolic blood pressure is the same for those below age 60 as it is for those age 60+.  This is interesting because the scholarly article says that 2/3 of those above age 60 have hypertension, or 3/4 of those above age 70, yet we're only seeing roughly 1/2 having hypertension in our two age groups.  Keep in mind that there are two types of hypertension, systolic hypertension and diastolic hypertension, and I would assume that the ratios in the scholarly article are for all types of hypertension, however we're only looking at systolic hypertension in this hypothesis test, which could skew our interpretation.
+It appears that the proportion of those below age 60 with high systolic blood pressure is the same as it is for those age 60+.  This is interesting because the scholarly article says that 2/3 of those above age 60 have hypertension, yet in our sample we're only seeing roughly 1/2 having hypertension in each of the two age groups.
+
+Keep in mind that there are two types of hypertension, systolic hypertension and diastolic hypertension, and I would assume that 2/3 proportion stated in the scholarly article are for both types of hypertension combined, however it's unclear.  Given that this hypothesis test focused solely on systolic blood pressure, that could be part of the discrepancy.
 
 Furthermore, we're looking at results after 24 weeks of the acupuncture treatment, so while we might expect to see a higher proportion of those age 60+ with hypertension, perhaps the acupuncture treatments have been more effective on the older patients in this study.
 
@@ -340,6 +342,7 @@ plt.title('Age and Diastolic Blood Pressure (DBP)')
 plt.xlabel('Age (yrs)')
 plt.ylabel('SBP (mmHg)')
 plt.plot(x, slope*x+intercept, color='r');
+plt.savefig("/users/rancher/Google Drive/Coding/website/github_pages/images/acupuncture_analysis/lin_reg_age_dbp.png", bbox_inches="tight")
 
 md('Linear Regression equation: $\hat{y} = %.3fx + %.3f$'%(slope, intercept))
 ```
@@ -760,6 +763,15 @@ print(F"P-value <= alpha?: {true_or_false}")
 
 ```{python}
 mult_linear_model.summary()
+```
+
+```{python}
+plt.rc('figure', figsize=(12, 7))
+#plt.text(0.01, 0.05, str(model.summary()), {'fontsize': 12}) old approach
+plt.text(0.01, 0.05, str(mult_linear_model.summary()), {'fontsize': 10}, fontproperties = 'monospace') # approach improved by OP -> monospace!
+plt.axis('off')
+#plt.tight_layout()
+plt.savefig("/users/rancher/Google Drive/Coding/website/github_pages/images/acupuncture_analysis/mult_lin_reg_q5_summary.png", bbox_inches="tight")
 ```
 
 #### *Step 4: Conclusion - Using statistical language*
